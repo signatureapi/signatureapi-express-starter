@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Env files (keep the example)
+.env
+.env.*
+!.env.example
+
+# SQLite database
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Build output
+dist/
+
+# E2E artifacts
+e2e/test-results/
+e2e/playwright-report/

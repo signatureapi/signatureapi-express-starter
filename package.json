@@ -1,0 +1,28 @@
+{
+  "name": "signatureapi-express-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Send an agreement for e-signature with SignatureAPI from an Express app.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/index.ts",
+    "dev": "node --watch --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/index.ts",
+    "test": "node --test --disable-warning=ExperimentalWarning \"test/**/*.test.ts\"",
+    "typecheck": "tsc"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0",
+    "standardwebhooks": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.19.1",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.1",
+    "typescript": "^7.0.2"
+  }
+}
